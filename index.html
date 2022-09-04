@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyPortofolio</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <script src=""></script>
+  <body>
+    <input type="checkbox" id="check">
+    <div class="mobile-sidebar">
+        <ul>
+          <a href="#Home"><li>Home</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#Project"><li>Project</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+    </div>
+    <header>
+           <nav>
+            <a href="#Home"><img src="assets/image/logonama.png"></a>
+            <a href="#Home"><h4>Adam Zulhamsyah</h4></a>
+        <ul>
+          <a href="#Home"><li>Home</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#Project"><li>Project</li></a>
+          <a href="#about"> <li>About</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+        <label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
+      </nav>
+       <div class="head" id="Home">
+        <img src="assets/image/3d.png">
+        <h3>Hi...<br>
+        I'm a <span id="efek"></span></h3>
+        <p >Selamat datang di website portofolio saya !</p>
+      </div>
+      </div>
+
+    </header>
+    <main>
+      <div id="content">
+        <article id="about" class="card">
+          <h2>About Me</h2>
+          <section id="Home" class="card">
+             Halo perkenalkan nama saya Adam Zulhamsyah. Saya seorang mahasiswa Teknik Informatika di sebuah perguruan tinggi swasta Universitas Pamulang, sekarang saya sudah memasuki semester 7. Saya  sekarang tinggal di kota Depok, Jawa Barat. Saya sangat antusias ingin mempelajari Web Developer maka dari itu saya mempelajari front end web developer di dicoding.
+            </p>
+          </section>
+        </article>
+  
+        <article id="skills">
+          <h2>Skills</h2>
+
+          <div class="card">
+            <section class="featured-card">
+              <h4>HTML5</h4>
+              <div class="bar">
+                <span class="nilai">90%</span>
+              </div>
+               <h4>CSS</h4>
+              <div class="bar2">
+                <span class="nilai2">80%</span>
+                
+              </div>
+               <h4>JAVASCRIPT</h4>
+              <div class="bar3">
+                <span class="nilai3">30%</span>
+                
+              </div>
+               <h4>PHP</h4>
+              <div class="bar4">
+                <span class="nilai4">40%</span>
+                
+              </div>
+
+              <h4>MYSQL</h4>
+              <div class="bar5">
+                <span class="nilai5">50%</span>
+                
+              </div>
+
+              <h4>FLUTTER</h4>
+              <div class="bar6">
+                <span class="nilai6">20%</span>
+                
+              </div>
+            </section>
+          </div>
+        </article>
+
+          <article id="Project" >
+          <h2>Project</h2>
+    
+              <header class="col-4">
+                <h3>Website E-Commerce</h3>
+               <a href="https://tokocingkoh.000webhostapp.com/"> <img src="assets/image/tes.png" alt="Project1" /></a>
+              </header>
+          
+            
+              <header class="col-4">
+               <h3>Website Budgetin</h3>
+               <a href="#"> <img src="assets/image/project2.png" alt="Project1" /></a>
+              </header>     
+        
+              <header class="col-4">
+                 <h3>Resep Makanan App</h3>
+               <a href="#"> <img src="assets/image/project3.png" /></a>
+              </header>
+      
+              <header class="col-4">
+                <h3>Web Calculator</h3>
+               <a href=""> <img src="assets/image/project4.png" alt="Project1" /></a>
+              </header>
+               <div class="wrap">.</div>
+
+        </article>
+
+        <article id="contact" class="card">
+          <h2>Contact</h2>
+
+          <form method="post" id="form">
+            <div class="form-group">
+              <h4>Name</h4>
+              <input id="from_name"name="from_name" type="text" placeholder="Type Your Full Name..." required>
+            </div>
+            <div class="form-group">
+              <h4>Email Address</h4>
+              <input id="email_id" name="email_id" type="email" placeholder="Type Your Email..." required>
+            </div>
+            <div class="form-group">
+              <h4>Message</h4>
+              <textarea id="message" name="message" rows="5" placeholder="Type Your Message Here..." required></textarea> 
+            </div>
+            <div class="form-group">
+              <button type="submit" id="button" class="pushable">
+              <span class="front" id="spn" value="Send Email">Send</span>
+              </button>
+              <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+              <script type="text/javascript">
+                emailjs.init('fii8KShEpDyPkXMfm')
+              </script>
+              <script src="https://smtpjs.com/v3/smtp.js"></script>
+            </div>
+          </form>
+        </article>
+      </div>
+
+  
+      <aside>
+        <article class="card">
+          <header class="profile">
+            <h2>Identitas</h2>
+            <img class="utama" src="assets/image/adamfoto.png" alt="Adam Zulhamsyah" />
+            <h3>Adam Zulhamsyah</h3>
+            <p>Informatics Engineering Student</p>
+          </header>
+          <div class="sosmed ">
+            
+          <ul>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+            <li>
+              <i class="fab fa-youtube"></i>
+            </li>
+          </ul>
+          </div>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <p>&#169; Adam Zulhamsyah 2022</p>
+    </footer>
+     <script src="assets/js/form.js"></script>
+  </body>
+</html>
